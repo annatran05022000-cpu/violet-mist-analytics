@@ -1,0 +1,16 @@
+
+baseURL = "/"
+languageCode = "en-us"
+title = "Violet Mist Analytics"
+theme = "custom"
+
+[params]
+  description = "Marketing analytics: attribution modeling, funnel analysis, and data-driven growth decisions."
+  author = "Editorial Team"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5

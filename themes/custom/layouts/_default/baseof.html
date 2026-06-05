@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}Violet Mist Analytics{{ else }}{{ .Title }} | Violet Mist Analytics{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Marketing analytics: attribution modeling, funnel analysis, and data-driven growth decisions.{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}Marketing analytics: attribution modeling, funnel analysis, and data-driven growth decisions.{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="stylesheet" href="/css/main.css">
+{{ if .IsHome }}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Violet Mist Analytics","description":"Marketing analytics: attribution modeling, funnel analysis, and data-driven growth decisions."}
+</script>{{ end }}
+</head>
+<body>
+<header>
+  <a href="/" class="site-title">Violet Mist Analytics</a>
+  <button id="menu-toggle">☰</button>
+  <nav id="nav-menu">
+    <a href="/">Home</a>
+    <a href="/posts/">Articles</a>
+  </nav>
+</header>
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+<footer>
+  <p>&copy; {{ now.Year }} Violet Mist Analytics &mdash; All rights reserved.</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

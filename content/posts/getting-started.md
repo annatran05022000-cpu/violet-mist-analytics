@@ -1,4 +1,9 @@
 ---
+image: "photo-1551288049-bebda4e38f71"
+cover:
+  image: "photo-1551288049-bebda4e38f71"
+  alt: "cover"
+  relative: false
 title: "Welcome to Violet Mist Analytics"
 date: 2026-06-01
 description: "Marketing analytics: attribution modeling, funnel analysis, and data-driven growth decisions."
